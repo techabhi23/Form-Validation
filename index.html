@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c17398e7c6.js" crossorigin="anonymous"></script>
+  <title>FormValidation</title>
+
+</head>
+<body>
+  <div class="container">
+    <form action="">
+      <div class="contact">
+        <label for="userName">Name:</label>
+
+        <input type="text " placeholder="Denial Sams" id="userName"  onkeyup="nameValidation()"   required>
+
+        <span id="nameError"></span>
+      </div>
+
+      <div class="contact">
+        <label for="userPhone">Contact:</label>
+        <input type="tel " placeholder="123 3454 456" id="userPhone" required onkeyup="contactValidation()">
+        <span id="phoneError"></span>
+      </div>
+
+      <div class="contact">  
+        <label for="userEmail">Email:</label>
+           <input type="email " placeholder="xyz@gmail.com" id="userEmail" required onkeyup="emailValidation()">
+            <span id="emailError"></span>
+          </div>
+
+      <div class="contact">     
+        <label for="desc">Enter description:</label>
+        <br>
+        <textarea name="Name" id="userDescription" cols="30" rows="6" placeholder="Write minimum 30 letters:" required onkeyup="descriptionValidation()"></textarea>
+        <span id="descriptionError"></span>
+      </div>
+        <button>submit
+        </button>
+        
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
